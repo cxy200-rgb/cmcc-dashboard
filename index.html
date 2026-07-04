@@ -21,7 +21,7 @@
     --glow: 0 0 8px rgba(0,200,255,0.25);
   }
   * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { width:1920px; height:1080px; overflow:hidden; margin:0 auto; font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",sans-serif; background:var(--bg); color:var(--text); }
+  html,body { width:100vw; max-width:1920px; height:100vh; max-height:1080px; overflow:hidden; margin:0 auto; font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",sans-serif; background:var(--bg); color:var(--text); }
   body {
     background:
       radial-gradient(ellipse at 18% 35%, rgba(0,180,255,0.06) 0%, transparent 55%),
@@ -78,7 +78,7 @@
     background:linear-gradient(135deg, var(--accent), #0078a8);
   }
   .cat-tag { background:linear-gradient(135deg, #00a8f0, #0068a0); }
-  .module-header .module-name { font-size:14px; font-weight:700; letter-spacing:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .module-header .module-name { font-size:16px; font-weight:700; letter-spacing:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .overall-dot { width:7px; height:7px; border-radius:50%; box-shadow:0 0 4px currentColor; }
 
   .module-header { background:linear-gradient(180deg, rgba(0,168,240,0.18), rgba(0,100,160,0.04)); }
@@ -89,7 +89,7 @@
     background:linear-gradient(135deg, var(--accent), #0078a8);
   }
   .cat-tag { background:linear-gradient(135deg, #00a8f0, #0068a0); }
-  .module-header .module-name { font-size:14px; font-weight:700; letter-spacing:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .module-header .module-name { font-size:16px; font-weight:700; letter-spacing:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .overall-dot { width:7px; height:7px; border-radius:50%; box-shadow:0 0 4px currentColor; }
 
   .tab-bar {
@@ -98,7 +98,7 @@
     border-bottom:1px solid rgba(0,200,255,0.25);
   }
   .tab-btn {
-    padding:6px 16px; font-size:12px; font-weight:600;
+    padding:6px 16px; font-size:13px; font-weight:600;
     color:#5a9ab8; background:none; border:none;
     border-bottom:2px solid transparent;
     cursor:pointer; transition:all .25s;
@@ -115,29 +115,29 @@
   .tab-panel { display:none; }
   .tab-panel.active { display:block; }
 
-  .indicator-table { width:100%; border-collapse:collapse; font-size:11px; table-layout:fixed; }
+  .indicator-table { width:100%; border-collapse:collapse; font-size:13px; table-layout:fixed; }
   .indicator-table th {
     position:sticky; top:0;
     background:rgba(2,14,38,0.97);
-    padding:5px 5px; text-align:center; font-weight:600; font-size:10px;
+    padding:7px 6px; text-align:center; font-weight:600; font-size:12px;
     color:var(--accent); border-bottom:2px solid rgba(0,200,255,0.5);
     white-space:nowrap; z-index:2; letter-spacing:1px;
   }
-  .indicator-table td { padding:6px 6px; border:1px solid rgba(0,200,255,0.18); vertical-align:middle; line-height:1.5; }
+  .indicator-table td { padding:8px 8px; border:1px solid rgba(0,200,255,0.18); vertical-align:middle; line-height:1.5; }
   .indicator-table tbody tr:hover td { background:rgba(0,180,255,0.04); }
 
   .col-l2 { width:12%; } .col-act { width:34%; } .col-path { width:20%; } .col-target { width:14%; } .col-status { width:20%; }
 
-  .l2-name { font-weight:600; color:#c8e8ff; font-size:11px; word-break:break-all; overflow:hidden; }
-  .act-text { color:#b8ddf0; font-size:10px; line-height:1.5; overflow:hidden; }
-  .path-text { color:#b8ddf0; font-size:10px; line-height:1.5; overflow:hidden; }
-  .target-num { font-weight:700; font-size:11px; color:#d0ecff; text-align:center; white-space:nowrap; }
+  .l2-name { font-weight:600; color:#c8e8ff; font-size:13px; word-break:break-all; overflow:hidden; }
+  .act-text { color:#b8ddf0; font-size:12px; line-height:1.6; overflow:hidden; }
+  .path-text { color:#b8ddf0; font-size:12px; line-height:1.6; overflow:hidden; }
+  .target-num { font-weight:700; font-size:13px; color:#d0ecff; text-align:center; white-space:nowrap; }
   .status-cell { text-align:center; }
 
   .progress-wrap { display:flex; align-items:center; gap:5px; }
-  .progress-bar-outer { flex:1; height:4px; background:var(--bar-track); border-radius:2px; overflow:hidden; box-shadow:inset 0 1px 2px rgba(0,0,0,0.3); }
+  .progress-bar-outer { flex:1; height:6px; background:var(--bar-track); border-radius:3px; overflow:hidden; box-shadow:inset 0 1px 2px rgba(0,0,0,0.3); }
   .progress-bar-inner { height:100%; border-radius:2px; transition:width .5s ease; }
-  .progress-text { font-weight:700; font-size:11px; min-width:32px; text-align:right; flex-shrink:0; }
+  .progress-text { font-weight:700; font-size:13px; min-width:38px; text-align:right; flex-shrink:0; }
 
   .pg-green  .progress-bar-inner { background:linear-gradient(90deg, #00c853, #00e676); box-shadow:0 0 6px rgba(0,230,118,0.3); }
   .pg-green  .progress-text { color:#00e676; }
