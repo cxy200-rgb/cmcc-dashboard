@@ -21,7 +21,7 @@
     --glow: 0 0 8px rgba(0,200,255,0.25);
   }
   * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { width:100%; height:100%; margin:0; padding:0; overflow:hidden; font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",sans-serif; background:var(--bg); color:var(--text); }
+  html,body { width:100%; height:100%; margin:0; padding:0; overflow:auto; font-family:"Microsoft YaHei","PingFang SC","Helvetica Neue",sans-serif; background:var(--bg); color:var(--text); }
   body {
     background:
       radial-gradient(ellipse at 18% 35%, rgba(0,180,255,0.06) 0%, transparent 55%),
@@ -32,7 +32,7 @@
       var(--bg);
     background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
   }
-  .dashboard { position:fixed; top:0; left:0; right:0; bottom:0; z-index:1; padding:10px 16px; }
+  .dashboard { position:relative; z-index:1; width:1920px; height:1080px; padding:10px 16px; }
 
   /* ===== 布局：上排量+客(各50%) / 下排收+质+能(各33%) ===== */
   .modules-grid {
